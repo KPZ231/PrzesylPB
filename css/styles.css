@@ -12,30 +12,49 @@ body {
 
 /* Stylizacja nagłówków */
 h2, h3 {
+    text-align: center;
     color: #BB86FC; /* Lekko fioletowy kolor dla nagłówków */
 }
 
 /* Stylizacja formularza */
 form {
-    padding: 20px;
-    background-color: #333333; /* Ciemniejszy tło dla formularza */
+    padding: 0px 20px 20px 20px;
+    border: 1px solid rgba(246, 246, 246, 0.072);
+    background-color: rgb(13, 13, 13); /* Ciemniejszy tło dla formularza */
+    -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 1);
+box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 1);
     border-radius: 8px;
     max-width: 500px;
     margin: 20px auto;
+    transition: 0.3s;
+}
+
+
+form:hover {
+    transform: scale(1.01);
+
+    -webkit-box-shadow: 0px 8px 24px 10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 24px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 24px 10px rgba(0, 0, 0, 1);
 }
 
 /* Stylizacja etykiet (label) */
 label {
-    display: block;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
+    font-weight: 100;
+    font-size: 0.8rem;
+
 }
 
 /* Stylizacja pól tekstowych */
 input[type="text"], input[type="file"] {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
     margin-bottom: 20px;
     border: none;
+    border: 1px solid rgba(246, 246, 246, 0.072);
+
     border-radius: 5px;
     background-color: #242424; /* Jeszcze ciemniejszy tło dla pól */
     color: #E0E0E0; /* Jasny tekst */
@@ -45,7 +64,7 @@ input[type="text"], input[type="file"] {
 input[type="submit"] {
     background-color: #BB86FC; /* Fioletowy kolor */
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     color: #FFFFFF;
     cursor: pointer;
@@ -74,6 +93,15 @@ a:hover {
     border-radius: 8px;
     max-width: 600px;
     margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(246, 246, 246, 0.072);
+    background-color: rgb(13, 13, 13); /* Ciemniejszy tło dla formularza */
+    -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 1);
+box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 ul {
@@ -100,4 +128,56 @@ button, input, select, textarea {
 /* Stylizacja dla wyświetlanych komunikatów */
 strong {
       color: #03DAC5;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #242424; /* or any color you prefer */
+    color: #E0E0E0;
+    transition: background-color 0.3s ease;
+
+    border-radius: 5px;
+}
+
+.custom-file-upload:hover {
+    background-color: #333333; /* darker grey for hover effect */
+}
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    color: #fff;
+    animation: slideInLeft 0.5s forwards;
+    transition: opacity 0.5s ease;
+
+}
+
+.notification.success {
+    background-color: rgb(13, 13, 13); /* Ciemniejszy tło dla formularza */
+    border: 1px solid #4caf4f61; /* Green for success */
+}
+
+.notification.error {
+    background-color: rgb(13, 13, 13); /* Ciemniejszy tło dla formularza */
+
+    border: 1px solid #f4433663; /* Red for error */
 }

@@ -1,0 +1,113 @@
+paü 25, 2022 6:25:36 AM biz.ganttproject.LoggerImpl debug
+FINE: Creating main frame...
+paü 25, 2022 6:25:36 AM biz.ganttproject.LoggerImpl debug
+FINE: 1. loading look'n'feels
+paü 25, 2022 6:25:37 AM biz.ganttproject.LoggerImpl debug
+FINE: 2. loading options
+paü 25, 2022 6:25:37 AM biz.ganttproject.LoggerImpl debug
+FINE: 3. creating menus...
+paü 25, 2022 6:25:38 AM biz.ganttproject.LoggerImpl debug
+FINE: 4. creating views...
+paü 25, 2022 6:25:38 AM biz.ganttproject.LoggerImpl debug
+FINE: 5. calculating size and packing...
+paü 25, 2022 6:25:38 AM biz.ganttproject.LoggerImpl debug
+FINE: 6. changing language ...
+paü 25, 2022 6:25:38 AM biz.ganttproject.LoggerImpl debug
+FINE: 7. first attempt to restore bounds
+paü 25, 2022 6:25:38 AM biz.ganttproject.LoggerImpl debug
+FINE: 8. finalizing...
+paü 25, 2022 6:25:39 AM com.bardsoftware.eclipsito.update.UpdaterImpl lambda$getUpdateMetadata$2
+SEVERE: Failed to fetch updates from https://www.ganttproject.biz/dl/updates/ganttproject-3.0.json
+java.util.concurrent.CompletionException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.stopOnError(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionally(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$UniExceptionally.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.errorCommon(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.onError(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.handleError(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher.signalError(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalWriteSubscriber.signalError(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalWriteSubscriber.onError(Unknown Source)
+	at java.net.http/jdk.internal.net.http.SocketTube.onError(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SubscriberWrapper.errorCommon(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Writer.processData(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Writer$WriterDownstreamPusher.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Writer.schedule(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.resumeActivity(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(Unknown Source)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(Unknown Source)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.TransportContext.fatal(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(Unknown Source)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(Unknown Source)
+	at java.base/sun.security.ssl.SSLHandshake.consume(Unknown Source)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(Unknown Source)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(Unknown Source)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask.run(Unknown Source)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	... 14 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at java.base/sun.security.validator.Validator.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 24 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.base/java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 30 more
+
+paü 25, 2022 6:25:47 AM net.sourceforge.ganttproject.GPLogger log
+INFO: [GanttOptions] save(): finished!!
