@@ -48,7 +48,7 @@ label {
 }
 
 /* Stylizacja pól tekstowych */
-input[type="text"], input[type="file"] {
+input[type="text"], input[type="file"], input[type="password"] {
     width: 100%;
     padding: 10px 0px;
     margin-bottom: 20px;
