@@ -1,0 +1,103 @@
+/* Importowanie czcionki Roboto z Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Ustawienie podstawowego motywu dla całego dokumentu */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Ciemny tło */
+    color: #E0E0E0; /* Jasny tekst */
+}
+
+/* Stylizacja nagłówków */
+h2, h3 {
+    color: #BB86FC; /* Lekko fioletowy kolor dla nagłówków */
+}
+
+/* Stylizacja formularza */
+form {
+    padding: 20px;
+    background-color: #333333; /* Ciemniejszy tło dla formularza */
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Stylizacja etykiet (label) */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja pól tekstowych */
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #242424; /* Jeszcze ciemniejszy tło dla pól */
+    color: #E0E0E0; /* Jasny tekst */
+}
+
+/* Stylizacja przycisku */
+input[type="submit"] {
+    background-color: #BB86FC; /* Fioletowy kolor */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #9a67ea; /* Ciemniejszy fiolet przy najechaniu */
+}
+
+/* Stylizacja linków pobierania */
+a {
+    color: #03DAC6; /* Miętowy kolor */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00BFA5; /* Ciemniejszy miętowy przy najechaniu */
+}
+
+/* Stylizacja kontenera dla listy plików */
+.container {
+    background-color: #242424; /* Ciemne tło */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+ul {
+    list-style-type: none; /* Usunięcie kropek z listy */
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #333333; /* Delikatny podział między elementami listy */
+    border-bottom: none; /* Usuwa podział od ostatniego elementu listy */
+}
+
+/* Ustawienie podstawowych stylów dla paragrafów */
+p {
+margin: 10px 0;
+}
+
+/* Dodanie efektu przejścia do wszystkich elementów interaktywnych */
+button, input, select, textarea {
+      transition: all 0.3s ease;
+}
+
+/* Stylizacja dla wyświetlanych komunikatów */
+strong {
+      color: #03DAC5;
+}
