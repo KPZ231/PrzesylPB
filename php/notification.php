@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 function setNotification($message, $type = 'error') {
     $_SESSION['notification'] = [

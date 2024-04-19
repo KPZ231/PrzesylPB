@@ -10,7 +10,27 @@
 
 </head>
 <body>
+<?php
+session_start(); // Rozpoczęcie sesji
 
+// Sprawdzenie, czy użytkownik jest zalogowany
+if (!isset($_SESSION["user_id"])) {
+    // Użytkownik nie jest zalogowany, przekierowanie na stronę logowania
+    header("Location: login.php");
+    exit();
+}
+
+
+    // Obsługa wylogowania
+    if (isset($_POST["logout"])) {
+        // Zniszczenie sesji
+        session_destroy();
+        // Przekierowanie na stronę logowania
+        header("Location: login.php");
+        exit();
+    }
+    
+?>
 <?php
     require 'php/notification.php';
     $uploadDir = 'uploads/';
@@ -89,6 +109,10 @@
         <input type="submit" value="Prześlij plik">
     </form>
 
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <input type="hidden" name="logout" value="true">
+        <input type="submit" value="Wyloguj">
+    </form>
 </body>
 <script>
   document.getElementById('file-upload').onchange = function () {
